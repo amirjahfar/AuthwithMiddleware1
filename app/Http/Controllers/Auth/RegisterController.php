@@ -93,7 +93,7 @@ class RegisterController extends Controller
             if ($verified){
 
                 Mail::to($user->email)->send(new successfullyActivated($user));
-                return redirect()->route('login')->with('message','Your Account Has Been Activated You Can Login');
+                return redirect()->route('login')->with('message','Account Activated');
             }
 
             else{
