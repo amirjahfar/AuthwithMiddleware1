@@ -20,7 +20,7 @@ class verifyUserByEmail
 
         if ($user->status == 0){
             Auth::logout();
-            return redirect ('login')->with('message','Email has been sent to your email please verify email to activate your account');
+            return redirect ('login')->with('message','Please Check Your Email to Activate Your Account');
         }
         return $next($request);
     }
