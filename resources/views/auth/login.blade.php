@@ -6,7 +6,7 @@
         <div class="col-md-8">
 
             @if (session('message'))
-                <p class="alert alert-danger animated bounce">{{session('message')}}</p>
+                <p class="alert alert-danger animated bounceInDown">{{session('message')}}</p>
             @endif
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
